@@ -1,0 +1,1 @@
+CREATE KEYSPACE "dummykeyspace" WITH REPLICATION = { 'class' : 'NetworkTopologyStrategy', 'datacenterone': '3', 'datacentertwo': '3', 'datacenterthree': '3' } AND DURABLE_WRITES = True;
