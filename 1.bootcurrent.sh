@@ -37,7 +37,7 @@ docker volume rm --force $(docker volume ls -q) || true
 docker network rm bluenet || true
 docker network rm rednet || true
 docker network create bluenet --subnet 172.19.0.0/16 || true
-docker network create rednet --subnet 172.18.0.0/16 || true
+docker network create rednet --subnet 172.20.0.0/16 || true
 echo "Done cleaning up old stuff"
 
 SetClusterName "Test_Cluster"
